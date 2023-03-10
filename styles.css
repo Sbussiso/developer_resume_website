@@ -1,0 +1,145 @@
+/* global styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+h1, h2, h3 {
+    margin: 0;
+  }
+  
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+a:hover {
+    text-decoration: underline;
+  }
+  
+header {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+nav {
+    margin-top: 10px;
+  }
+  
+nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+nav li {
+    margin-right: 20px;
+  }
+  
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+section {
+    margin-bottom: 40px;
+  }
+  
+section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+section p {
+    margin-bottom: 10px;
+  }
+  
+section ul li {
+    margin-bottom: 5px;
+  }
+  
+  ooter {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    font-size: 12px;
+  }
+  
+/* styles for specific sections */
+#about {
+    border-bottom: 1px solid #ddd;
+  }
+  
+#experience ul {
+    padding-left: 0;
+  }
+  
+#experience h3 {
+    margin-top: 20px;
+  }
+  
+#experience p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+#experience li {
+    margin-bottom: 10px;
+  }
+  
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+#skills li {
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+#projects h3 {
+    margin-top: 20px;
+  }
+  
+#projects p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+#projects ul li {
+    margin-bottom: 10px;
+  }
+  
+#education h3 {
+    margin-top: 20px;
+  }
+  
+#education p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+#education ul li {
+    margin-bottom: 10px;
+  }
+  
