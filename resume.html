@@ -43,7 +43,7 @@
             <li>using various custom software systems and a little SQL to make informed product decisions.</li>
             <li>working with large amounts of Excel data to make informed product decisions</li>
             <li>listening to and responding to associate feedback.</li>
-            <li>Managing and colaborating with groups of people to achieve a specific goal or solve a problem.</li>
+            <li>Managing and collaborating with groups of people to achieve a specific goal or solve a problem.</li>
             <li>Finding quick innovative solutions to time sensitive problems and short deadlines</li>
           </ul>
         </ul>
@@ -51,10 +51,10 @@
       <section id="skills">
         <h2>Skills</h2>
         <ul>
-          <li>Group colaboration</li>
-          <li>Managment/Leadership</li>
+          <li>Group collaboration</li>
+          <li>Management/Leadership</li>
           <li>Working with custom software tools and systems</li>
-          <li>Learning new skills necsasary to achive goals</li>
+          <li>Learning new skills necessary to achieve goals</li>
           <li>Python</li>
           <li>HTML</li>
           <li>CSS</li>
@@ -83,6 +83,7 @@
               <li>css</li>
               <li>JavaScript</li>
               <li>Bootstrap</li>
+              <li>JSON</li>
             </ul>
           </li>
           <h3><a href="https://github.com/Sbussiso/ML-Confidentiality-Detector.git">Sensitive Content Detector</a></h3>
@@ -113,7 +114,7 @@
         </ul>
         <ul>
           <h3><a href="https://github.com/Sbussiso/EZML.git">EZML</a></h3>
-          <p>This is an application for automatically generating testing and training data for Machine Learning Models. This project uses the GPT-3 api and excel to create entire data sets for users that can then be used to train or test models. The motivation of this project was an attempt to rapidly speed up and take a lot of the work out of supervised learning.</p>
+          <p>This is an application for automatically generating testing and training data for Machine Learning Models. This project uses the GPT-3 api and excel to create entire data sets for users that can then be used to train or test models with a single prompt. The motivation of this project was an attempt to rapidly speed up and take a lot of the work out of supervised learning and creating custom data sets.</p>
           <li>
             <ul>
               <li>Python</li>
@@ -132,5 +133,40 @@
     <footer>
       <p>© 2023 S'Bussiso Dube</p>
     </footer>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Hello! Welcome to my resume page.</h1>
+      </div>
+
+    </div>
+    <!--popup javascript-->
+    <script>
+      window.onload = function() {
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Show the modal
+        modal.style.display = "block";
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      }
+    </script>
   </body>
 </html>
