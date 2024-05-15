@@ -74,7 +74,7 @@ jsonify==0.5
 jsonpatch==1.33
 jsonpointer==2.4
 kiwisolver==1.4.5
-langchain==0.0.354
+langchain==0.1.0
 langchain-community==0.0.8
 langchain-core==0.1.40
 langserve==0.0.51
