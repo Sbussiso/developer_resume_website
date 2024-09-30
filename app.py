@@ -89,6 +89,8 @@ def chat_assistant_route():
         ],
         model="gpt-3.5-turbo",
     )
+
+    
     # Access the content using the 'message' attribute of the Choice object
     assistant_message = chat_completion.choices[0].message.content
     print(assistant_message)
