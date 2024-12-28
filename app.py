@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, jsonify, flash, redirect, url_for
 import os
-from openai import OpenAI
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -66,35 +65,11 @@ def send_message_route():
 def chat_assistant_route():
     user_message = request.json.get("message")
 
-    loader = WebBaseLoader("https://calm-refuge-84210-53bd9dafdd04.herokuapp.com")
-    docs = loader.load()
-
-    docs_json = [{'url': doc.metadata.get('url'), 'content': doc.page_content} for doc in docs]
-
-    client = OpenAI(
-        # This is the default and can be omitted
-        api_key = os.getenv('OPENAI_API_KEY')
-    )
-
-    chat_completion = client.chat.completions.create(
-        messages=[
-            {
-                "role": "system",
-                "content": f"You are a chatbot for a resume website. Answer all questions about S'Bussiso Dube based off of this information: {docs_json}"
-            },
-            {
-                "role": "user",
-                "content": user_message,
-            }
-        ],
-        model="gpt-3.5-turbo",
-    )
-
+    #loader = WebBaseLoader("https://calm-refuge-84210-53bd9dafdd04.herokuapp.com")
+    #docs = loader.load()
+    #docs_json = [{'url': doc.metadata.get('url'), 'content': doc.page_content} for doc in docs]
     
-    # Access the content using the 'message' attribute of the Choice object
-    assistant_message = chat_completion.choices[0].message.content
-    print(assistant_message)
-    return jsonify({"message": assistant_message})
+    return jsonify({"message": f"Your prompt is: {user_message}"})
 
 
 
